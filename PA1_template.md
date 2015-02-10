@@ -5,10 +5,6 @@ date: "Monday, February 09, 2015"
 output: html_document
 ---
 
-```r
-knitr::opts_chunk$set(fig.path='Z:\\R\\RepData_PeerAssessment1\\')
-```
-
 This is my final version of PeerAssessment 1.
 
 First, I load the data and summary on data as follows: 
@@ -56,7 +52,7 @@ totalSteps
 hist(totalSteps)
 ```
 
-![plot of chunk Question1_2](Z:\R\RepData_PeerAssessment1\Question1_2-1.png) 
+![plot of chunk Question1_2](figure/Question1_2-1.png) 
 
   Calculate and report the mean and median of the total number of steps taken per day:
 
@@ -91,7 +87,7 @@ for (j in unique(activity$interval)){
 plot(unique(activity$interval),averSteps,type="l",xlab="interval")
 ```
 
-![plot of chunk Question2_1](Z:\R\RepData_PeerAssessment1\Question2_1-1.png) 
+![plot of chunk Question2_1](figure/Question2_1-1.png) 
 
   Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -141,7 +137,7 @@ for (i in levels(newactivity$date)){
 hist(newTotalSteps)
 ```
 
-![plot of chunk Question3_3](Z:\R\RepData_PeerAssessment1\Question3_3-1.png) 
+![plot of chunk Question3_3](figure/Question3_3-1.png) 
 
 ```r
 mean(newTotalSteps)
@@ -194,4 +190,4 @@ panelPlot<-data.frame(asteps=c(weekdayAverSteps,weekendAverSteps),interval=rep(u
 xyplot(asteps~interval|weekday,data=panelPlot,ylab="Number of steps",type="l",layout=c(1,2))
 ```
 
-![plot of chunk Question4_2](Z:\R\RepData_PeerAssessment1\Question4_2-1.png) 
+![plot of chunk Question4_2](figure/Question4_2-1.png) 
