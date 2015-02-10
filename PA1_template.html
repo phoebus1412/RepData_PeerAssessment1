@@ -201,7 +201,7 @@ hr {
 </head>
 
 <body>
-<pre><code class="r">knitr::opts_chunk$set(fig.path=&#39;Z:\\R\\RepData_PeerAssessment1\\instructions_fig\\&#39;)
+<pre><code class="r">knitr::opts_chunk$set(fig.path=&#39;Z:\\R\\RepData_PeerAssessment1\\&#39;)
 </code></pre>
 
 <p>This is my final version of PeerAssessment 1.</p>
@@ -243,7 +243,7 @@ totalSteps
 <pre><code class="r">hist(totalSteps)
 </code></pre>
 
-<p><img src="Z:RRepData_PeerAssessment1instructions_figQuestion1_2-1.png" alt="plot of chunk Question1_2"/> </p>
+<p><img src="Z:RRepData_PeerAssessment1Question1_2-1.png" alt="plot of chunk Question1_2"/> </p>
 
 <p>Calculate and report the mean and median of the total number of steps taken per day:</p>
 
@@ -271,7 +271,7 @@ for (j in unique(activity$interval)){
 plot(unique(activity$interval),averSteps,type=&quot;l&quot;,xlab=&quot;interval&quot;)
 </code></pre>
 
-<p><img src="Z:RRepData_PeerAssessment1instructions_figQuestion2_1-1.png" alt="plot of chunk Question2_1"/> </p>
+<p><img src="Z:RRepData_PeerAssessment1Question2_1-1.png" alt="plot of chunk Question2_1"/> </p>
 
 <p>Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?</p>
 
@@ -314,7 +314,7 @@ for (i in levels(newactivity$date)){
 hist(newTotalSteps)
 </code></pre>
 
-<p><img src="Z:RRepData_PeerAssessment1instructions_figQuestion3_3-1.png" alt="plot of chunk Question3_3"/> </p>
+<p><img src="Z:RRepData_PeerAssessment1Question3_3-1.png" alt="plot of chunk Question3_3"/> </p>
 
 <pre><code class="r">mean(newTotalSteps)
 </code></pre>
@@ -359,7 +359,7 @@ panelPlot&lt;-data.frame(asteps=c(weekdayAverSteps,weekendAverSteps),interval=re
 xyplot(asteps~interval|weekday,data=panelPlot,ylab=&quot;Number of steps&quot;,type=&quot;l&quot;,layout=c(1,2))
 </code></pre>
 
-<p><img src="Z:RRepData_PeerAssessment1instructions_figQuestion4_2-1.png" alt="plot of chunk Question4_2"/> </p>
+<p><img src="Z:RRepData_PeerAssessment1Question4_2-1.png" alt="plot of chunk Question4_2"/> </p>
 
 </body>
 

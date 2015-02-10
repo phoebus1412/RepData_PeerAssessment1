@@ -5,7 +5,7 @@ date: "Monday, February 09, 2015"
 output: html_document
 ---
 ```{r global_options}
-knitr::opts_chunk$set(fig.path='Z:\\R\\RepData_PeerAssessment1\\instructions_fig\\')
+knitr::opts_chunk$set(fig.path='Z:\\R\\RepData_PeerAssessment1\\')
 ```
 
 This is my final version of PeerAssessment 1.
